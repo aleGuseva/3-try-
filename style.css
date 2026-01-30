@@ -113,7 +113,7 @@ select:hover,
 
 .frameworks,
 .books {
-  min-width: 720px;
+  min-width: 520px;
 }
 
 .frameworks-list,
@@ -138,7 +138,7 @@ select:hover,
 }
 
 .skills {
-  min-width: 720px;
+  min-width: 520px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -149,7 +149,7 @@ select:hover,
   font-weight: 400;
   font-size: 16px;
   padding-left: 20px;
-  min-width: 720px;
+  min-width: 570px;
 }
 
 .label {

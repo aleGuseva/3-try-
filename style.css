@@ -7,10 +7,9 @@
 .container {
   outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1140px;
 }
-  /* 📍 Максимальная ширина для контейнера */
-}
+/* 📍 Максимальная ширина для контейнера */
 
 body {
   font-family: "Inter", sans-serif;
@@ -33,8 +32,9 @@ header span {
   padding: 60px 0;
   min-height: 100vh;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
@@ -71,9 +71,9 @@ header span {
 }
 
 .about-section .wrapper {
-      display: flex;
-    flex-direction: column;
-    gap: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
   /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
@@ -88,20 +88,19 @@ select {
   background-image: url("./ep_arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 12px top 50%;
-
 }
 
 select:hover,
 .text-field:hover {
   border: 1px solid #2965f1;
   border-radius: 5px;
-  
+
   /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
 }
 
 .info-wrapper {
-    display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
   /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
 }
@@ -134,15 +133,15 @@ flex-direction: row;
 
 .skills-block {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
 .skills {
   min-width: 720px;
   display: flex;
-flex-direction: column;
-gap: 20px;
+  flex-direction: column;
+  gap: 20px;
   /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
 
@@ -160,7 +159,6 @@ gap: 20px;
 
 form {
   margin-bottom: 40px;
-  order: -1;
   gap: 40px;
 }
 
